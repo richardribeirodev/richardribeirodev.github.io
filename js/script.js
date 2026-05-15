@@ -10,10 +10,6 @@ function playAlertAudio(){
 setInterval(() => {
     const elementStateNow = document.querySelector("text-component.cc-editable");
 
-    elementStateNow.forEach((el, index) => {
-        console.log(index, el.innerText);
-    });
-
     if (elementStateNow) {
         const stateNow = elementStateNow.innerText.trim();
         if (stateNow.toLowerCase() == "disconnected"){
